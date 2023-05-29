@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AssignmentController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
 use App\Http\Middleware\AssignmentMiddleware;
 use App\Http\Middleware\RequestRedirectMiddleware;
@@ -42,7 +43,7 @@ Route::resource('product', ProductController::class);
 Route::get("/submit", ContactController::class);
 
 //Task 7: Resource Controller
-
+Route::resource('post', PostController::class);
 
 //Task 8: Blade Template Engine
 Route::get('/', function () {
