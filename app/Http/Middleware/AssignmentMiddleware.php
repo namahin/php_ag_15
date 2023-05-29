@@ -33,8 +33,4 @@ class AssignmentMiddleware
         return $next($request);
     }
 
-//
-    public function RequestRedirectMF(Request $request, Closure $next): Response{
-        return redirect("/dashboard");
-    }
 }

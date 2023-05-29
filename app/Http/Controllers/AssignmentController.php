@@ -16,4 +16,8 @@ class AssignmentController extends Controller
     function RequestRedirect2():string{
         return "Your Request Redirection is Successful!";
     }
+
+    function  AuthAction():string{
+        return "All OK 200";
+    }
 }
